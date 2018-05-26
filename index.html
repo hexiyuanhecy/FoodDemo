@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>臻品生活家</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	
+<body>
+
+	
+<!-- 导航栏 -->	
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu-nav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">臻品生活家</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		<li class="active"><a href="index.html">首页</a></li>
+        <li><a href="food1.html">美食</a></li>
+        <li><a href="activity.html">活动</a></li>
+		  <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+      </ul>
+		
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-toggle="modal" data-target="#about-denglu">登录</a></li>
+		<li><a href="#" data-toggle="modal" data-target="#about-zhuce">注册</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+   
+<!-- 轮播 --> 
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="food-nanguagao.html"><img src="images/nanguagao1.jpg" alt="1 slide"></a>
+      <div class="container">
+          <div class="carousel-caption">
+              <h1>南瓜葡萄发糕</h1>
+              <p><a class="btn btn-lg btn-primary" href="http://www.google.cn/intl/zh-CN/chrome/browser/" role="button" target="_blank">查看详情</a></p>
+          </div>
+      </div>
+    </div>
+    <div class="item">
+      <a href="food-jiuniang.html"><img src="images/jiuniang1.jpg" alt="2 slide"></a>
+      <div class="container">
+          <div class="carousel-caption">
+              <h1>南瓜酒酿小圆子</h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button" target="_blank">查看详情</a></p>
+          </div>
+      </div>
+    </div>
+    <div class="item">
+      <a href="food-digua.html"><img src="images/digua1.jpg" alt="3 slide"></a>
+      <div class="container">
+          <div class="carousel-caption">
+              <h1>微波烤地瓜</h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button" target="_blank">查看详情</a></p>
+          </div>
+      </div>
+    </div>
+    <div class="item">
+      <a href="food-xueli.html"><img src="images/xueli1.jpg" alt="4 slide"></a>
+      <div class="container">
+          <div class="carousel-caption">
+              <h1>雪梨银耳炖木瓜</h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button" target="_blank">查看详情</a></p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Controls -->
+<a class="left carousel-control" href="#ad-carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#ad-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+ 
+<div class="container">
+	<div class="row ">
+		<center><div class="col-md-4">
+			<button type="button" class="btn btn-default btn-circle" id="food"><i class="glyphicon glyphicon-list-alt"></i></button> 
+			<div class="caption">
+				<h3>美食</h3>
+				<p>体验极致烹饪</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<button type="button" class="btn btn-default btn-circle" id="activity"><i class="glyphicon glyphicon-hand-up"></i></button>
+			<div class="caption">
+				<h3>活动</h3>
+				<p>我们号召城中所有美食达人，辣妈主妇，烘焙大师，城市OL等民间高手，爱好生活、美食的伙伴们都将相聚于此。</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<button type="button" class="btn btn-default btn-circle" id="guanli"><i class="glyphicon glyphicon-user"></i></button>
+			<div class="caption">
+				<h3>我的</h3>
+				<p>更多个人信息查询管理</p>
+			</div>
+		</div></center>
+	</div>
+</div>
+
+<br><br>
+
+
+<!-- 页脚 -->
+<div class="container"><hr>
+	<footer>
+	<p class="pull-right"><a href="#top">回到顶部</a></p>
+	<p>&copy;2015335800071 何茜媛</p>
+	</footer>
+</div>
+
+<!-- 登录 -->
+<div class="modal fade" id="about-denglu" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="container" id="denglu" style="width:500px;height:300px;">
+
+      <form class="form-signin">
+      	 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="form-signin-heading text-center">用户登录</h2>
+        <label for="inputEmail" class="sr-only">邮件地址</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="输入用户名" required autofocus><br>
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="输入密码" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> 记住我
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+      </form>
+
+    </div>
+   </div>
+   </div>
+</div>
+
+<!-- 注册 -->
+<div class="modal fade" id="about-zhuce" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="container" id="denglu" style="width:500px;height:350px;">
+
+      <form class="form-signin">
+      	 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="form-signin-heading text-center">用户注册</h2>
+        <label for="inputEmail" class="sr-only">邮件地址</label>
+        <input type="email" id="inputEmail" class="form-control username" placeholder="输入邮箱地址" required autofocus><br>
+		  
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" id="inputPassword" class="form-control mima" placeholder="输入密码" required><br>
+		  
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" id="inputPasswordagain" class="form-control repeatmima" placeholder="确认密码" required><br>
+		  
+        <button class="btn btn-lg btn-primary btn-block zhuce" id="zhuce" type="submit">注册</button>
+      </form>
+
+    </div>
+   </div>
+   </div>
+</div>
+
+<!-- 关于 -->
+<div class="modal fade" id="about-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">关于</h4>
+      </div>
+      <div class="modal-body">
+        <p>美食！你值得拥有！&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib.js"></script>
+
+    
+</body>
+
+
+
+
+</html>
