@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>臻品生活家-管理</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	<script src="js/jquery.js"></script>
+	<script>
+$(function(){
+	$(".my").click(function(){
+		var index = $(this).index();
+		$(".dd").hide();
+		$(".dd:eq("+index+")").show();
+		$(this).siblings('li').removeClass('selected'); 
+		$(this).addClass("selected");
+	});
+});
+</script>
+  </head>
+	
+<body>
+   
+<!-- 导航栏 -->	
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu-nav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">臻品生活家</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		<li><a href="index.html">首页</a></li>
+        <li><a href="food1.html">美食</a></li>
+        <li><a href="activity.html">活动</a></li>
+      </ul>
+		
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">退出</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	
+	
+<div class="container guanlileft">
+  <div class="row">
+	<div class="col-md-2" style="background-color:#EFEEEE;height: 800px;padding-top: 20px">
+	  <ul class="nav nav-pills nav-stacked">
+		<li class="my"><a href="##">收藏的美食</a></li>
+		<li class="my"><a href="##">预约的活动</a><br></li>
+		<li class="my"><a href="##">设置</a><br></li>
+		<li class="my"><a href="##">美食发布</a></li>
+		<li class="my"><a href="##">活动发布</a></li>
+ </ul>
+	  </div>
+	  
+	<div class="col-md-10">
+		<h1>管理我的臻品生活</h1>
+		<hr>
+
+		<div class="panel panel-primary dd" style="display: none">
+		    <p class="panel-heading">收藏的美食</p>
+			<div class="nav nav-pills nav-stacked">
+				<div class="alert-info">微波炉烤地瓜<button class="pull-right btn btn-danger btn-sm">取消</button></div>
+				
+				<p class="alert-info">南瓜葡萄发糕<button class="pull-right btn btn-danger btn-sm" >取消</button></p>
+			</div> 	
+		</div>
+		
+		<div class="panel panel-primary dd">
+		    <p class="panel-heading">预约的活动</p>
+			<div class="nav nav-pills nav-stacked">
+				<div class="alert-info">新年家宴-云南菜<button class="pull-right btn btn-danger btn-sm">取消</button></div>
+				
+				<p class="alert-info">新年家宴-云南菜<button class="pull-right btn btn-success btn-sm" >活动结束</button></p>
+			</div> 	
+		</div>
+		
+		<div class="panel panel-primary dd" style="display: none">
+		    <p class="panel-heading">设置</p>
+			<div class="nav nav-pills nav-stacked">
+				<div class="alert-info">修改用户名<button class="pull-right btn btn-danger btn-sm">取消</button></div>
+				
+				<p class="alert-info">修改密码<button class="pull-right btn btn-success btn-sm" >活动结束</button></p>
+			</div> 	
+		</div>
+		
+		<div class="panel panel-primary dd" style="display: none">
+		    <p class="panel-heading">美食发布</p>
+			<div class="nav nav-pills nav-stacked">
+				<div class="alert-info">123<button class="pull-right btn btn-danger btn-sm">取消</button></div>
+				
+				<p class="alert-info">45679<button class="pull-right btn btn-success btn-sm" >活动结束</button></p>
+			</div> 	
+		</div>
+		
+		<div class="panel panel-primary dd" style="display: none">
+		    <p class="panel-heading">活动发布</p>
+			<div class="nav nav-pills nav-stacked">
+				<div class="alert-info">活动名称<button class="pull-right btn btn-danger btn-sm">取消</button></div>
+				
+				<p class="alert-info">地点<button class="pull-right btn btn-success btn-sm" >活动结束</button></p>
+			</div> 	
+		</div>
+	</div>
+	  
+	  
+	</div>
+</div>
+
+<br><br>
+
+
+<!-- 页脚 -->
+<div class="container"><hr>
+	<footer>
+	<p class="pull-right"><a href="#top">回到顶部</a></p>
+	<p>&copy;2015335800071 何茜媛</p>
+	</footer>
+	  </div>
+  
+<!-- 关于 -->
+<div class="modal fade" id="about-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">关于</h4>
+      </div>
+      <div class="modal-body">
+        <p>美食！你值得拥有！&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib.js"></script>
+</body>
+</html>

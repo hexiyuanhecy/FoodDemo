@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+.carousel{
+	height:500px;
+	margin-bottom: 60px;
+}
+.carousel .item{
+	height: 500px;
+	background-color: #000;
+}
+.carousel .item img{
+	width:100%;
+}
+li:hover{
+	color:#E7E7E7;
+}
+.col-md-4 a{
+	width: 400%;
+	height: 400%;
+}
+.glyphicon{
+	font-size: 60px;
+}
+
+.btn-circle {  
+  width: 120px;  
+  height: 120px;  
+  text-align: center;  
+  padding: 6px 0;  
+  font-size: 12px;  
+  line-height: 1.428571429;  
+  border-radius: 100px;
+} 
+
+
+
+
+h3{
+	color:#428bca;
+}
+.thumbnail a img{
+	height: 180px;
+	width: 100%;
+}
+.thumbnail{
+	height: 340px;
+}
+
+
+
+.guanlileft{
+	margin-top: 50px;
+}
+.yuyue{
+	background-color: #428bca;
+}
+
+
+.huodongtu{
+	width:100%;
+	height:100%;
+}
+
+
+
+/*管理*/
+.alert-info{
+	margin: 20px;
+	padding: 10px;
+	border-radius: 5px;
+}
+.alert-info button{
+	margin-top: -5px;
+}
+.my{
+	color: #1A1111;
+}
+.selected{
+	backgroundr:#3D86C6;
+	z-index: 0;
+}
